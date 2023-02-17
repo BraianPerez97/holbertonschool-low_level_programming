@@ -1,2 +1,5 @@
-#!/bin/bash
-int puts(Programming is like building a multilingual puzzle) '\n'
+#include <stdio.h>
+int main () 
+{
+	puts('\n'Programming is like building a multilingual puzzle);
+}
