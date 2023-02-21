@@ -1,6 +1,12 @@
 #include <stdio.h>
-int main () 
+/**
+ *main- entry point.
+ *
+ *Description: its printing quote and new line.
+ *return: always 0.
+ */
+int main(void)
 {
-	puts('\n'Programming is like building a multilingual puzzle);
-	return 0;
+	puts("Programming is like building a multilingual puzzle\n");
+	return (0);
 }
