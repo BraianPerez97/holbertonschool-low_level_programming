@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - assign random number to variable
+ *main - assign random number to variable
  *
- * Description- last digit
- * return: always (0)
+ *Description- last digit
+ *return: always (0)
  */
 int main(void)
 {
