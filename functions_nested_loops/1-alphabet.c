@@ -1,15 +1,15 @@
 #include "main.h"
+
 /**
- * print_alphabet - entry
+ * main - check the code
  *
- * description - print alphabet 
- * lowercase 
- * return - void
+ * Return: Always 0.
  */
-void print_alphabet(void)
+int main(void)
 {
-char x 'a';
-while (x<= 'z')
+    print_alphabet();
+    return (0);
+}<= 'z')
 {
 _putchar(x);
 x++;
