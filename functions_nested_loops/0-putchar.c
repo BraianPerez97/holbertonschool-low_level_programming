@@ -1,11 +1,12 @@
 #include "main.h"
 /**
- * main- Entry
+ *main - Entry
  *
- * description write progtram that prints
- * _putchar followed by new line.
- * return - 0
+ *Description: write progtram that prints
+ *_putchar followed by new line.
+ *Return: 0
  */
+
 int main(void)
 {
 _putchar('_');
