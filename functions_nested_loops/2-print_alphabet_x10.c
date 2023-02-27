@@ -5,8 +5,9 @@
  * description - print alphabet 10 times
  * return - void
  */
-void print_alphabet_10x(void)
+int main(void)
 {
+print_alphabet_x10();
 int a;
 for (a = 1; a <= 10; a++)
 {
@@ -18,5 +19,5 @@ b++;
 }
 _putchar('\n');
 }
-return;
+return(0);
 }
