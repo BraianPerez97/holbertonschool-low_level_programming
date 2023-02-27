@@ -1,26 +1,31 @@
 #include "main.h"
 /**
- * print_sign - print sign of number
- * @n - number of sigh to be printed
- * return - 1 if > 0 
- * 	0 if = 0
- * 	-1 if < 0
- */
-int print_sign(int n);
+*print_sign - Entry point
+*@n: input param
+*Description: checks if number is positive,
+*zero or negative
+*Return: 0.(Success)
+*/
+int print_sign(int n)
 {
-if (n > 0)
+char x;
+if (n >= 1)
 {
-_putchar('+');
+x = '+';
+_putchar(x);
 return (1);
 }
 else if (n == 0)
 {
-_putchar('0');
+x = '0';
+_putchar(x);
 return (0);
 }
-else
+else if (n < 0)
 {
-_putchar('-');
-return (-1);
+x = '-';
+_putchar(x);
+return (1);
 }
+return (n);
 }
