@@ -1,10 +1,10 @@
 #include "main.h"
 /**
-*print_sign - Entry point
-*@n: input param
-*Description: checks if number is positive,
+*print_sign - Entry
+*@n: input
+*Description: checks if num positive,
 *zero or negative
-*Return: 0.(Success)
+*Return: 0.
 */
 int print_sign(int n)
 {
