@@ -19,10 +19,10 @@ _putchar(' ');
 y--;
 }
 _putchar('\\');
-_puthcar('\n');
+_putchar('\n');
 x++;
 n--;
 }
 if (x < 1)
-_putchar('\n')
+_putchar('\n');
 }
