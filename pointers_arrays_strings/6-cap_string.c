@@ -6,7 +6,7 @@
  * tabulation, new line, ,, ;, ., !, ?, "  (, ), {, and }"
  * return: pointer to the capitalized string
  */
-char *cap_string(char *)
+char *cap_string(char *str)
 {
 char *s = str;
 
