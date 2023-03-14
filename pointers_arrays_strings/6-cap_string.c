@@ -6,15 +6,24 @@
  * tabulation, new line, ,, ;, ., !, ?, "  (, ), {, and }"
  * return: pointer to the capitalized string
  */
-char *cap_string(char *str)
+char *cap_string(char *s)
 {
-char *s = str;
+	char *ws = " \t\n,;.!?\"(){}";
+	int a;
+	int b;
 
-while (*s <= 'z')
+for (a = 0; b = 0; s[a]; ++a);
 {
-	if (*s >= 'a')
-		*s -= 32;
-	s++;
+if ('a' <= s[a] && s[a] <= 'z')
+{
+if (a)
+{
+for (b = 0; ws[b] && ws[b] != s[a -1]; ++b)
+;
+}
+if (ws[b])
+s[a] -= ('a' - 'A');
+}
 }
 return (s);
 }
