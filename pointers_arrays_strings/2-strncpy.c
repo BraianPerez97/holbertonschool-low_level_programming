@@ -6,7 +6,7 @@
  * @n: number copy
  * return: pointers or string
  */
-char * *_strngcpy(char *dest, char *src, int n);
+char *_strngcpy(char *dest, char *src, int n)
 {
 	int i;
 
