@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include "main.h"
+#include <stdlib.h>
 /**
   * main - Program that prints its name
   * @argc: count
@@ -16,4 +18,4 @@ int main(int argc, char **argv)
 		printf("\n");
 	}
 	return (0);
-
+}
