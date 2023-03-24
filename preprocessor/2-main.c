@@ -1,5 +1,6 @@
 #include <stdio.h>
 #ifdef __FILE__
+#endif
 /**
  * main - entry
  * return: 0
