@@ -1,10 +1,11 @@
 #include <stdio.h>
+#ifdef __FILE__
 /**
  * main - entry
  * return: 0
  */
 int main (void)
 {
-	printf("Compiled from file: %s\n", __FILE__);
+	printf("__FILE__%s\n", __FILE__);
 	return 0;
 }
