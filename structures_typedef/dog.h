@@ -2,9 +2,9 @@
 #define DOG_H
 /**
  * struct dog - new structure type
- * @name: char
- * @age: float
- * @owner: char
+ * @name: name of dog
+ * @age: dog age
+ * @owner: dogs owner
  * description: define new type
  */
 struct dog
@@ -12,4 +12,11 @@ struct dog
         char *name;
         float age;
         char *owner;
-}
+};
+ /**
+  * struct dog - init a var
+  * @name: dogs name
+  * @age: dogs age
+  * @owner: dogs owner
+  */
+
