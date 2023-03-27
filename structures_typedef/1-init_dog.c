@@ -6,7 +6,7 @@
  * @age: pointer to character array used to fill age
  * @owner: pointer to character array used to fill name
  */
-void init_dog(struct dog *d, char *name, float age, char *owner);
+void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	if (d != 0)
 	{
