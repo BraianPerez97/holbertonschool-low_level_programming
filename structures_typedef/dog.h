@@ -16,7 +16,7 @@ struct dog
 };
 /**
  * struct dog - init a variable
- * @name: name 
+ * @name: name
  * @age: age
  * @owner: owner
  */
