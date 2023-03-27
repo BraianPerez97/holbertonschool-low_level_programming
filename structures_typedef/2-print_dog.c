@@ -5,16 +5,24 @@
  * @d: variable pointing to struct dog to print elements.
  */
 void print_dog(struct dog *d)
-{ if (d != NULL)
-	{
-		if (d->name == NULL)
-			printf("Name: (nil)\n");
-		else
-			printf("Name: %f\n", d->age);
-		printf("Age: %f\n", d->age);
-		if (d->owner == NULL)
-			printf("Owner: (nil)\n");
-		else
-			printf("Owner: %s\n", d->owner);
-	}
+{
+    if (d == NULL) {
+        return;
+    }
+
+    printf("Name: ");
+    if (d->name == NULL) {
+        printf("(nil)\n");
+    } else {
+        printf("%s\n", d->name);
+    }
+
+    printf("Age: %f\n", d->age);
+
+    printf("Owner: ");
+    if (d->owner == NULL) {
+        printf("(nil)\n");
+    } else {
+        printf("%s\n", d->owner);
+    }
 }
