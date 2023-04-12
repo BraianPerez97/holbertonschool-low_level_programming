@@ -16,12 +16,25 @@ list_t *add_node(list_t **head, const char *str)
 		new_node->len = strlen(str);
 		new_node->next = *head;
 		*head = new_node;
-	} 
+	}
 	else
 	{
 		return (NULL);
 	}
 	*head = new_node;
-	
+
 	return (new_node);
+}
+
+/**
+ * _strnlen_recursion - return the length of a string.
+ * @s: string
+ * Return: lenght of @s
+ */
+int _strnlen_recursion(char *s)
+{
+	if (*s == 0)
+		return (0);
+	else
+		return (1 + _strnlen_recursion(s + 1));
 }
