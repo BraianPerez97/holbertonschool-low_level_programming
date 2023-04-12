@@ -2,7 +2,7 @@
 /**
  *add_node_end - function that adds node
  *@head: head of list
- @str: string of the instance
+ *@str: string of the instance.
  *Return: new list
  */
 list_t *add_node_end(list_t **head, const char *str)
