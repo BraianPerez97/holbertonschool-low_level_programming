@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * add_nodeint_end - function that adds a new node at the
+ * add_dnodeint_end - function that adds a new node at the
  * end of a dlistint_t list
  * @head: Is a first structure of a linked list
  * @n: number to set field n in the new node.
