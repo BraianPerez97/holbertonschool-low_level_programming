@@ -1,36 +1,33 @@
-
 #include "main.h"
+
 /**
- * prime_num- Entry point
- * @n: number param
- * @i: traverser param
- * Description: checks if int is prime
- * Return: 0. or 1.
- */
-int prime_num(int n, int i)
+* is_prime - recursively divide by higher divisor, skip even nums
+* @n: number to check if prime
+* @divisor: divisor
+* Return: 1 if prime, 0 if not, or recursive function call
+*/
+
+int is_prime(int n, int divisor)
 {
-if (n == i)
-	return (1);
-if (n % i == 0)
-	return (0);
-return (prime_num(n, i + 1));
+if (n == divisor)
+return (1);
+if (n % divisor == 0)
+return (0);
+return (is_prime(n, divisor + 1));
 }
+
 /**
- * is_prime_number- Entry point
- * @n: number param
- * Description: returns 1. if int is prime
- * number otherwise return 0.
- * Return: 0. or 1.
- */
+* is_prime_number - check if prime
+* @n: number to check
+* Return: 1 if prime, 0 if not
+*/
+
 int is_prime_number(int n)
 {
-if (n <= 1)
-<<<<<<< HEAD
-	return (1);
-if (n == 0)
-=======
->>>>>>> 9c16dcdb4a9efdc3b5fb9039ee3c654bc9e7a3c9
-	return (0);
-else
-	return (prime_num(n, 2));
+int divisor = 3;
+if (n % 2 == 0 || n < 2)
+return (0);
+if (n == 2)
+return (1);
+return (is_prime(n, divisor));
 }

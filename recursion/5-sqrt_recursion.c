@@ -1,34 +1,30 @@
 #include "main.h"
+
 /**
- * get_sqrt- Entry point
- * @n: current value param
- * @i: traverser param
- * Description: gets square root
- * Return: square root
- */
-int get_sqrt(int n, int i)
+* find_root - find square root of n, starting from the smallest possible, 0
+* @n: n
+* @root: test this root
+* Return: natural square root, or -1 if not natural root
+*/
+
+int find_root(int n, int root)
 {
-if (n == (i * i))
-	return (i);
-else if (n > (i * i))
-	return (get_sqrt(n, i + 1));
-else
-	return (-1);
+if (root * root > n)
+return (-1);
+if (root * root == n)
+return (root);
+return (find_root(n, root + 1));
 }
 
 /**
- * _sqrt_recursion- Entry point
- * @n: num param
- * Description: returns the natural square root
- * of n
- * Return: return new value
- */
+* _sqrt_recursion - find natural square root of n
+* @n: n
+* Return: natural square root, or -1 if not natural root
+*/
+
 int _sqrt_recursion(int n)
 {
 if (n < 0)
-	return (-1);
-if (n == 0)
-	return (1);
-else
-	return (get_sqrt(n, 1));
+return (-1);
+return (find_root(n, 0));
 }
